@@ -1,2 +1,28 @@
-expense = input("Enter expense amount: ")
-print("Expense entered:",expense)
+expenses = []
+while True: 
+    amount = float(input("Enter expense amount: "))
+    category = input("Enter category: ")
+
+
+    expense = {
+        "amount" : amount,
+        "category" : category
+    }
+
+    expenses.append(expense)
+
+
+    choice = input("Add another expense? yes/no: ")
+
+
+    if choice == "no":
+        break
+
+print(expenses)
+
+
+print("All expenses:",expenses)
+print("Total expenses:",sum(expenses))
+print("Highest expense:",max(expenses))
+print("Lowest expense:", min(expenses))
+print("Average expense:", sum(expenses)/len(expenses))
