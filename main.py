@@ -18,7 +18,7 @@ while True:
     if choice == "no":
         break
 
-print(expenses)
+print("expenses")
 
 
 print("All expenses:",expenses)
@@ -26,3 +26,5 @@ print("Total expenses:",sum(expenses))
 print("Highest expense:",max(expenses))
 print("Lowest expense:", min(expenses))
 print("Average expense:", sum(expenses)/len(expenses))
+
+print("Ai Expense Tracker")
